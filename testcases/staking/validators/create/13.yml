@@ -18,9 +18,9 @@ staking_parameters:
     validator:
       details:
         name: "CV13_Validator"
-        identity: "MrBubz"
-        website: "https://i.imgur.com/G6Mruca.jpg"
-        security_contact: "Bubz Hacker Legion"
+        identity: "HarmonyTF_Validator"
+        website: "https://harmony.one"
+        security_contact: "validator@somewhere.com"
         details: "BubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubzBubz"
       commission:
         rate: 0.1

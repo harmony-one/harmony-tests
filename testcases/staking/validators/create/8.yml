@@ -18,9 +18,9 @@ staking_parameters:
     validator:
       details:
         name: "Bubz"
-        identity: "MrBubz"
+        identity: "HarmonyTF_Validator"
         website: "https://www.instagram.com/p/B5bUv2JH8u6/"
-        security_contact: "Bubz Hacker Legion"
+        security_contact: "validator@somewhere.com"
         details: "I would be remiss if I didnt participate in your species day of thanks! Although I am obliged to none of your species, I am feeling a tad grateful for those who have pledged their allegiance to their lord over this past human years pass!! To those who be faithful, find pleasure in the tasting of your fat fowls, let it be a reminder of those who shall decorate our table with their corpses in the future!! May their destruction pave our way to happiness!!! PRAISE BE TO MR BUBZ!!!"
       commission:
         rate: 0.1
