@@ -22,6 +22,7 @@ go.mod*.tmp
 
 dist/
 keys/
+export/
 cmd/main
 testcases_dump
 profile*.pdf
