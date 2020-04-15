@@ -1,0 +1,50 @@
+network:
+  name: "stressnet"
+  mode: "api"
+  cross_shard_tx_wait_time: 32 # The time to wait for account balances to properly updated when performing cross shard transfers - this time will be 1.5x'd for localnet, the open staking network and the stress test network since they seem to be slower with processing txs and blocks
+  staking_wait_time: 16
+
+  # endpoints should map to correct chan ids
+  endpoints:
+    pangaea:
+      - http://35.166.89.131:9500
+      - http://18.222.166.227:9500
+      - http://3.101.57.60:9500
+      - http://3.85.9.70:9500
+    stressnet:
+      - http://54.245.77.197:9500
+      - http://52.53.161.58:9500
+  
+  retry:
+    attempts: 3 # How many attempts that should be performed per RPC call
+    wait: 1 # How long to wait after each attempt
+  
+  gas:
+    cost: 0.1 # Estimated gas cost that will be used for various transaction and funding calculations etc.
+    limit: 53000 # Higher limit than regular txs (21000) - seems there are some issues occasionally when using a lower gas limit 
+    price: 1
+
+framework:
+  test: "all"
+  minimum_required_memory: 6000 # specified in MB: 8000MB (8GB) of minimum required system memory for some test cases
+
+account:
+  passphrase: ""
+  remove_empty: true
+  use_all_in_keystore: false
+  
+funding:
+  account:
+    name: "FundingAccount" # This name will be prefixed with the current network name
+    address: ""
+  shards: "all"
+  minimum_funds: 10.0
+  timeout: 30
+  verbose: false
+  retry:
+    attempts: 5 # How many funding attempts that should be performed
+    wait: 1 # How long to wait after each attempt
+  gas:
+    cost: 0.0001
+    limit: 53000
+    price: 1

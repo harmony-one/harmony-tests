@@ -1,0 +1,37 @@
+category: "Edit Validator"
+name: "EV12"
+goal: "Edit commission rate"
+priority: 0
+execute: true
+expected: true
+verbose: true
+scenario: "staking/validator/edit/standard"
+staking_parameters:
+  from_shard_id: 0
+  to_shard_id: 0
+  nonce: -1 # -1 means that the nonce will automatically be identified
+  timeout: 60
+  gas:
+    limit: -1 # -1 means that the gas limit will automatically get calculated
+    price: 1
+  reuse_existing_validator: false
+  create:
+    validator:
+      details:
+        name: "EV12_Validator"
+        identity: "MrBubz"
+        website: "https://i.imgur.com/G6Mruca.jpg"
+        security_contact: "Bubz Hacker Legion"
+        details: "https://www.youtube.com/watch?v=QQNL83fhWJU"
+      commission:
+        rate: 0.1
+        max_rate: 0.5
+        max_change_rate: 0.05
+      amount: 10000
+      minimum_self_delegation: 10000
+      maximum_total_delegation: 11000
+    bls_key_count: 1
+  edit:
+    validator:
+      commission:
+        rate: 0.08
