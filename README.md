@@ -3,7 +3,16 @@ harmony-tests executes a set of test cases for testing that regular and staking 
 
 It uses the harmony-tf testing framework under the hood.
 
+## Installation
+
+```
+rm -rf harmony-tests && mkdir -p harmony-tests && cd harmony-tests
+bash <(curl -s -S -L https://raw.githubusercontent.com/harmony-one/harmony-tests/master/scripts/install.sh)
+```
+
 ## Build/deploy
+
+If you need to build/compile the tool from scratch:
 
 Regular build:
 `make all`
@@ -15,13 +24,6 @@ Static build, package all testcases and upload everything to Amazon S3:
 `make upload-linux`
 
 (Static builds have only been tested on Linux)
-
-## Installation
-
-```
-rm -rf harmony-tests && mkdir -p harmony-tests && cd harmony-tests
-bash <(curl -s -S -L https://raw.githubusercontent.com/harmony-one/harmony-tests/master/scripts/install.sh)
-```
 
 ## Usage
 
