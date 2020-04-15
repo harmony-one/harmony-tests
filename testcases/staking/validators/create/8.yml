@@ -17,7 +17,7 @@ staking_parameters:
   create:
     validator:
       details:
-        name: "Bubz"
+        name: "HarmonyTF_CV8_Validator"
         identity: "HarmonyTF_Validator"
         website: "https://www.instagram.com/p/B5bUv2JH8u6/"
         security_contact: "validator@somewhere.com"
