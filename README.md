@@ -43,10 +43,10 @@ To run all test cases:
 `./tests --network NETWORK`
 
 To run all test cases using an already funded address:
-`./tests --network NETWORK --from YOUR_FUNDED_ADDRESS`
+`./tests --network NETWORK --address YOUR_FUNDED_ADDRESS`
 
 To connect to custom defined RPC nodes:
-`./tests --network NETWORK --mode custom --from YOUR_FUNDED_ADDRESS`
+`./tests --network NETWORK --mode custom --address YOUR_FUNDED_ADDRESS`
 
 ### Specific test cases
 
