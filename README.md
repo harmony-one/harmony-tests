@@ -24,6 +24,8 @@ bash <(curl -s -S -L https://raw.githubusercontent.com/harmony-one/harmony-tests
 ```
 
 ## Usage
+
+### Funding
 If you already have a funded account, simply pass the address of that account using `--address`
 
 If you want to import and use private keys:
@@ -34,7 +36,7 @@ e.g. for testnet -> `cp -r keystore-folder keys/testnet`
 
 Harmony TF will automatically identify keyfiles no matter what you call the folders or what the files are called - as long as they reside under `keys/testnet` (or whatever network you're using) they'll be identified.
 
-## Usage
+### Running tests
 To run all test cases:
 `./tests --network NETWORK`
 
