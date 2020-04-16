@@ -26,7 +26,7 @@ network:
 
 framework:
   test: "all"
-  minimum_required_memory: 6000 # specified in MB: 8000MB (8GB) of minimum required system memory for some test cases
+  minimum_required_memory: 8000 # specified in MB: 8000MB (8GB) of minimum required system memory for some test cases
 
 account:
   passphrase: ""
