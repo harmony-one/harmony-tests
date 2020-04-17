@@ -30,7 +30,9 @@ Static build, package all testcases and upload everything to Amazon S3:
 ### Funding
 
 #### Existing address
-If you already have a funded account, simply pass the address of that account using `--address`
+If you already have a funded account, simply pass the address of that account using `--address`:
+
+- `./tests --network NETWORK --address YOUR_FUNDED_ADDRESS`
 
 #### Private keys
 If you want to import and use private keys:
