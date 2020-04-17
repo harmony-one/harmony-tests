@@ -45,8 +45,11 @@ To run all test cases:
 To run all test cases using an already funded address:
 `./tests --network NETWORK --address YOUR_FUNDED_ADDRESS`
 
-To connect to custom defined RPC nodes:
+To connect to custom defined RPC nodes configured using config.yml:
 `./tests --network NETWORK --mode custom --address YOUR_FUNDED_ADDRESS`
+
+To connect to custom nodes using command line args:
+`./tests --network NETWORK --mode custom --nodes http://SHARD0NODEIP:9500,http://SHARD1NODEIP:9500 --address YOUR_FUNDED_ADDRESS`
 
 ### Specific test cases
 
@@ -64,6 +67,13 @@ To connect to custom defined RPC nodes:
 - Only run tx -> cross beacon shard tests: `./tests --network NETWORK --test transactions/cross_beacon_shard`
 - Only run tx -> same app shard tests: `./tests --network NETWORK --test transactions/same_app_shard`
 - Only run tx -> same beacon shard tests: `./tests --network NETWORK --test transactions/same_beacon_shard`
+
+### Exporting test data
+Harmony-tests currently supports exporting the test suite results as a CSV report:
+
+`./tests --network NETWORK --address YOUR_FUNDED_ADDRESS --export csv`
+
+JSON export is also planned, but not yet implemented.
 
 ## Writing test cases
 Test cases are defined as YAML files and are placed in testcases/ - see this folder for existing test cases and how to impelement test cases.
