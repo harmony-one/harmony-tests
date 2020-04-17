@@ -28,13 +28,22 @@ Static build, package all testcases and upload everything to Amazon S3:
 ## Usage
 
 ### Funding
+
+#### Existing address
 If you already have a funded account, simply pass the address of that account using `--address`
 
+#### Private keys
 If you want to import and use private keys:
-e.g. for testnet -> `nano keys/testnet/private_keys.txt` - and save your list of private keys to this file
 
+- `mkdir -p keys/NETWORK/`
+- `nano keys/NETWORK/private_keys.txt`
+- paste your private keys and save the file
+
+#### Keystore files
 If you want to import and use keystore files:
-e.g. for testnet -> `cp -r keystore-folder keys/testnet`
+
+- `mkdir -p keys/NETWORK/`
+- `cp -r PATH/TO/YOUR/KEYSTORE/FOLDER keys/NETWORK`
 
 Harmony TF will automatically identify keyfiles no matter what you call the folders or what the files are called - as long as they reside under `keys/testnet` (or whatever network you're using) they'll be identified.
 
