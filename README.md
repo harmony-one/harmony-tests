@@ -47,7 +47,7 @@ If you want to import and use keystore files:
 - `mkdir -p keys/NETWORK/`
 - `cp -r PATH/TO/YOUR/KEYSTORE/FOLDER keys/NETWORK`
 
-Harmony TF will automatically identify keyfiles no matter what you call the folders or what the files are called - as long as they reside under `keys/testnet` (or whatever network you're using) they'll be identified.
+Harmony TF will automatically identify keyfiles no matter what you call the folders or what the files are called - as long as they reside under `keys/NETWORK` they'll be identified.
 
 ### Running tests
 To run all test cases:
