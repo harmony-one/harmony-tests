@@ -5,7 +5,7 @@ rm -rf hmy && curl -LO https://harmony.one/hmycli && mv hmycli hmy && chmod u+x 
 rm -rf tests && curl -LOs http://tools.harmony.one.s3.amazonaws.com/release/linux-x86_64/harmony-tests/tests && chmod u+x tests
 rm -rf testcases && curl -LOs http://tools.harmony.one.s3.amazonaws.com/release/linux-x86_64/harmony-tests/testcases.tar.gz && tar -xzf testcases.tar.gz && rm -rf testcases.tar.gz
 rm -rf config.yml && curl -LOs https://raw.githubusercontent.com/harmony-one/harmony-tests/master/config.yml
-mkdir -p keys/testnet
+mkdir -p keys/stressnet keys/pangaea
 echo "Harmony Tests have now been downloaded!"
 echo ""
 echo "Make sure to either add keystore files to keys/testnet or create the file keys/testnet/private_keys.txt and add testnet private keys to it"
