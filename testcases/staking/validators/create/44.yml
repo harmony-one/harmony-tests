@@ -3,7 +3,7 @@ name: "CV44"
 goal: "Duplicate bls keys (with other's key)"
 priority: 0
 execute: true
-expected: true
+expected: false
 verbose: true
 scenario: "staking/validator/create/existing_bls_key"
 staking_parameters:
