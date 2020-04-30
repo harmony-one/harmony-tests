@@ -34,5 +34,5 @@ staking_parameters:
     randomize_unique_fields: true
   edit:
     validator:
-      minimum_self_delegation: 20
+      minimum_self_delegation: 20000
     randomize_unique_fields: true
