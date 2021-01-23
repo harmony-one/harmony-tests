@@ -3,14 +3,18 @@ framework:
   minimum_required_memory: 6000 # specified in MB: e.g. 6000 = (6GB) of minimum required system memory for some test cases
 
 network:
-  name: "stressnet"
+  name: "testnet"
   mode: "api"
+  rpc_prefix: "hmy"
   timeout: 0 # If set to > 0 - use this as a global timeout for all transactions
   cross_shard_tx_wait_time: 60 # The time to wait for account balances to properly updated when performing cross shard transfers - this time will be 1.5x'd for localnet, the open staking network and the stress test network since they seem to be slower with processing txs and blocks
   staking_wait_time: 30
 
   # endpoints should map to correct chan ids
   endpoints:
+    localnet:
+      - http://localhost.charlesproxy.com:9500
+      - http://localhost.charlesproxy.com:9501
     pangaea:
       - http://35.166.89.131:9500
       - http://18.222.166.227:9500
