@@ -1,5 +1,5 @@
-category: "Same App Shard"
-name: "SAS1"
+category: "ETH - Same App Shard"
+name: "ETH-SAS1"
 goal: "Single account"
 priority: 1
 execute: true

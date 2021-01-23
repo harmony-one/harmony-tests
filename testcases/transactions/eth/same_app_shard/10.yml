@@ -1,5 +1,5 @@
-category: "Same App Shard"
-name: "SAS10"
+category: "ETH - Same App Shard"
+name: "ETH-SAS10"
 goal: "Maximum size of tx data"
 priority: 0
 execute: true
