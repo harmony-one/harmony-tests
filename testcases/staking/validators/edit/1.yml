@@ -14,7 +14,7 @@ staking_parameters:
   gas:
     limit: -1 # -1 means that the gas limit will automatically get calculated
     price: 1
-  reuse_existing_validator: true
+  reuse_existing_validator: false #true
   create:
     validator:
       details:
